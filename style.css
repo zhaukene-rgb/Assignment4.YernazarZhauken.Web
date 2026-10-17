@@ -1,0 +1,148 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #E6EFEC;
+  color: #16302B;
+}
+
+.card-form {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.card-form h1 {
+  background-color: #0F6B5F;
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 20px 24px;
+}
+
+.card-form .body {
+  padding: 24px;
+}
+.form-label,
+legend {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+legend {
+  float: none;
+  width: auto;
+  padding: 0;
+}
+
+.form-check-label {
+  font-size: 13px;
+}
+.form-control,
+.form-select,
+.input-group-text {
+  background-color: #F4F7F5;
+  border: 1px solid #E6EFEC;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0F6B5F;
+  box-shadow: none;
+}
+.form-floating input {
+  height: 52px;
+  padding-top: 22px;
+  padding-bottom: 4px;
+}
+
+.form-floating label {
+  font-size: 13px;
+  padding: 10px 12px;
+}
+
+.form-floating input::placeholder {
+  color: #16302B;
+}
+
+.form-check-input:checked {
+  background-color: #0F6B5F;
+  border-color: #0F6B5F;
+}
+.seg {
+  border: 1px solid #0F6B5F;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.seg label {
+  border: none;
+  border-radius: 0;
+  color: #0F6B5F;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 18px;
+}
+
+.seg input:checked + label {
+  background-color: #0F6B5F;
+  color: white;
+}
+.seg input:focus-visible + label {
+  outline: 3px solid #F2A93B;
+  outline-offset: -3px;
+}
+
+.phone .input-group-text {
+  background-color: #0F6B5F;
+  border-color: #0F6B5F;
+  color: white;
+  font-weight: 700;
+}
+
+.btn-find,
+.btn-clear {
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 9px 24px;
+}
+
+.btn-find {
+  background-color: #F2A93B;
+  border: 1px solid #F2A93B;
+  color: #16302B;
+}
+
+.btn-find:hover {
+  background-color: #E29A2B;
+  color: #16302B;
+}
+
+.btn-clear {
+  background-color: white;
+  border: 1px solid #16302B;
+  color: #16302B;
+}
+
+.invalid-feedback {
+  font-size: 13px;
+}
+
+input:user-invalid ~ .invalid-feedback,
+select:user-invalid ~ .invalid-feedback,
+textarea:user-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: red;
+}
+
+.field:has(:user-invalid) .invalid-feedback {
+  display: block;
+}
